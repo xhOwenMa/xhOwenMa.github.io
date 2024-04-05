@@ -2,96 +2,68 @@
   type: map
   contents:
     - name: Full Name
-      value: Albert Einstein
-    - name: Date of Birth
-      value: 14th March 1879
+      value: Xinhang (Owen) Ma
+    - name: Email
+      value: m.owen@wustl.edu
     - name: Languages
-      value: English, German
+      value: English, Mandarin
 
 - title: Education
   type: time_table
   contents:
-    - title: PhD
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1905
+    - title: MS Computer Science
+      institution: Washington University in St. Louis
+      year: 01/24 - 05/25
       description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Federal teaching diploma
-      institution: Eidgenössische Technische Hochschule, Zurich, Switzerland
-      year: 1900
+        - 'GPA: 4.0/4.0'
+        - 'Thesis: Verifiable Controls for Autonomous Driving'
+    - title: BS Mathematics and Computer Science
+      institution: Washington University in St. Louis
+      year: 08/20 - 12/23
       description:
-        - Description 1.
-        - Description 2.
+        - 'GPA: 3.91/4.0'
+        - Minor in Economics
 
 - title: Experience
   type: time_table
   contents:
-    - title: Professor of Theoretical Physics
-      institution: Institute for Advanced Study, Princeton University
-      year: 1933 - 1955
+    - title: Student Researcher
+      institution: Washington University in St. Louis - CERL Lab
+      year: 08/23 - NOW
       description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Visiting Professor
-      institution: California Institute of Technology, Pasadena, California, US
-      year: 1933
+        - Worked on autonomous driving projects including controls of a robotic vehicle in a miniature city and simulator-based controls for deep reinforcement learning-based agents.
+        - Worked on verification of neural network controllers for autonomous driving using generative models.
+    
+    - title: 'Startup Founding Member: AI/ML Technician'
+      institution: WrapperAI
+      year: 01/24 - NOW
       description:
-        - Description 1.
-        - Description 2.
+        - Designed and developed the technical workflow for the startup, including AWS services setups and model fine-tuning and deployments.
 
-    - title: Director
-      institution: Kaiser Wilhelm Institute for Physics, Berlin, Germany.
-      year: 1917-1933
-
-    - title: Professor of Theoretical Physics
-      institution: Karl-Ferdinand University, Prague, Czechoslovakia
-      year: 1911 - 1917
+    - title: Machine Learning Research Intern; Software Engineer
+      institution: TalkMeUp Inc.
+      year: 05/23 - 08/23
       description:
+        - Worked on machine learning algorithms to improve performance on human facial expression understanding and speech tone recognition.
+        - implemented SOC 2 (service organizations controls) modules for organization-level cybersecurity audits.
 
-    - title: Associate Professor of Theoretical Physics
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1909 - 1911
+    - title: Tutor; Teaching Assistant
+      institution: Washington University in St. Louis
+      year: 08/22 - NOW
+      description:
+        - See the courses I have been involved in on my <a href="/teaching/">teaching page</a>.
 
-- title: Open Source Projects
-  type: time_table
-  contents:
-    - title: <a href="https://github.com/alshedivat/al-folio">al-folio</a>
-      year: 2015-now
-      description: A beautiful, simple, clean, and responsive Jekyll theme for academics.
-
-- title: Honors and Awards
-  type: time_table
-  contents:
-    - year: 1921
-      items:
-        - Nobel Prize in Physics
-        - Matteucci Medal
-    - year: 2029
-      items:
-        - Max Planck Medal
-
-- title: Academic Interests
+- title: Research Interests
   type: nested_list
   contents:
-    - title: Topic 1.
+    - title: Trustworthy AI
       items:
-        - Description 1.
-        - Description 2.
-    - title: Topic 2.
+        - How to formalize and verify the trustworthiness of AI systems?
+    - title: Privacy-Preserving AI Systems
       items:
-        - Description 1.
-        - Description 2.
+        - How to protect user privacy while maintaining the performance of large language models?
 
 - title: Other Interests
   type: list
   contents:
-    - <u>Hobbies:</u> Hobby 1, Hobby 2, etc.
+    - <u>Hobbies:</u> playing video games, hiking, and photography

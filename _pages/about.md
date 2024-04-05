@@ -1,25 +1,28 @@
 ---
 layout: about
-title: about
+title: About
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Moto. Etc.
+subtitle: MSCS @ <a href='https://wustl.edu/'>Washington University in St. Louis</a>. 
 
 profile:
   align: right
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+    email: m.owen@wustl.edu
 
-news: true # includes a list of news items
-selected_papers: true # includes a list of papers marked as "selected={true}"
+news: false # includes a list of news items
+selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+Hey, thanks for visiting my page! :sparkles:
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+I am a Master's student studying Computer Science at Washington University in St. Louis. My research interests revolve around the field of **Trustworthy AI**, where I explore the possibilities of fundamentally understanding and certifying deep machine learning models. I'm driven by the potential to create AI systems that are reliable, transparent, and aligned with human values.
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+Currently, I am working on my Master's thesis under the supervision of Dr. [Yevgeniy Vorobeychik](https://vorobeychik.com/) where we try to develop a framework for obtaining and formally verifying safety guarantees in end-to-end autonomous driving systems. 
+
+Additionally, I am a founding member of [WrapperAI](https://wrapperai.org/), a startup that leverages natural language processing (NLP) techniques and information theory to develop solutions for safeguarding user privacy in scenarios such as digital file storage and user interactions with chatbots. 
+
+In my free time, I enjoy watching Netflix, playing video games (fingers crossed that Blizzard can revive World of Warcraft :broken_heart:), going on hikes with friends, and photography.
+

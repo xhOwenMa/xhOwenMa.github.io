@@ -1,12 +1,20 @@
 ---
 layout: page
 permalink: /teaching/
-title: teaching
-description: Materials for courses you taught. Replace this text with your description.
+title: Teaching
+description: Course that I am or have involved
 nav: true
 nav_order: 6
 ---
 
-For now, this page is assumed to be a static description of your courses. You can convert it to a collection similar to `_projects/` so that you can have a dedicated page for each course.
+## Washington University in St. Louis
 
-Organize your courses by years, topics, or universities, however you like!
+#### Teaching Assistant
+
+- Spring 2024: CSE347 Analysis of Algorithms
+- Fall 2023: CSE442 Into to Cryptography
+
+#### Tutor
+
+- Fall 2022 - now: for math and computer science major courses
+
