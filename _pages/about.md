@@ -6,7 +6,7 @@ subtitle: MSCS @ <a href='https://wustl.edu/'>Washington University in St. Louis
 
 profile:
   align: right
-  image: prof_pic.jpg
+  image: prof.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
     email: m.owen@wustl.edu
@@ -24,5 +24,5 @@ Currently, I am working on my Master's thesis under the supervision of Dr. [Yevg
 
 Additionally, I am a founding member of [WrapperAI](https://wrapperai.org/), a startup that leverages natural language processing (NLP) techniques and information theory to develop solutions for safeguarding user privacy in scenarios such as digital file storage and user interactions with chatbots. 
 
-In my free time, I enjoy watching Netflix, playing video games (fingers crossed that Blizzard can revive World of Warcraft :broken_heart:), going on hikes with friends, and photography.
+In my free time, I enjoy playing video games (fingers crossed that Blizzard can revive World of Warcraft :broken_heart:), going on hikes with friends, playing chess, and photography.
 

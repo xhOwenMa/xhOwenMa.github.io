@@ -18,6 +18,7 @@ Motivated from challenges we observed from the [F1Tenth Robotic Vehicle Project]
   - Deep Q-Learning where we simplified our action space into discrete space
   - Deep Deterministic Policy Gradient
   - Proximal Policy Optimization
+  - etc.
 
 ## Verification
 
