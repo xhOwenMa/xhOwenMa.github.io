@@ -1,5 +1,5 @@
 source "https://rubygems.org"
 
-gem "jekyll", "~> 3.8.5"
-
+gem "jekyll", "~> 4.3"
+gem "jekyll-remote-theme"
 gem "webrick", "~> 1.8"
