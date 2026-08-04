@@ -17,3 +17,5 @@ Archieve/
 
 # github action result
 semicolon_delimited_script
+# built pdf (installed to ../assets/files/curriculum_vitae.pdf by build.sh)
+owen_ma_cv.pdf

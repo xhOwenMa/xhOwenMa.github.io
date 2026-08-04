@@ -1,180 +1,200 @@
-%-------------------------
-% Academic CV - Xinhang (Owen) Ma
-% Based on sb2nov/resume template (MIT License)
-%------------------------
+%-------------------------------------------------------------------
+% Academic CV -- Xinhang (Owen) Ma
+%
+% Libertinus serif, 11pt, 1in margins. Centered nameplate, small-caps
+% section headings with a rule, publications as hanging-indent entries.
+%
+% Italic carries exactly one meaning here -- a publication venue (and
+% the thesis title, which is a genuine title). Dates and roles are
+% differentiated by size and weight instead, not by more italic.
+%
+% Build with ./build.sh, which compiles this file and installs the
+% result as ../assets/files/curriculum_vitae.pdf (the PDF the website
+% serves via cv_link in _config.yml).
+%-------------------------------------------------------------------
 
 \documentclass[letterpaper,11pt]{article}
 
-\usepackage[empty]{fullpage}
+\usepackage[margin=1in]{geometry}
+\usepackage{libertinus}
+\usepackage[T1]{fontenc}
+\usepackage{microtype}
 \usepackage{titlesec}
-\usepackage[usenames,dvipsnames]{color}
 \usepackage{enumitem}
+\usepackage{xcolor}
 \usepackage[hidelinks]{hyperref}
 \usepackage{fancyhdr}
-\usepackage[english]{babel}
-\usepackage{tabularx}
 \input{glyphtounicode}
+\pdfgentounicode=1   % keep PDF text copy-pasteable
 
+\definecolor{linkblue}{HTML}{1A4F8A}
+
+\linespread{1.05}
+\setlength{\parindent}{0pt}
+\raggedright
+\raggedbottom
+
+% Page numbers from page 2 onward -- academic CVs are expected to run long.
 \pagestyle{fancy}
 \fancyhf{}
-\fancyfoot{}
 \renewcommand{\headrulewidth}{0pt}
-\renewcommand{\footrulewidth}{0pt}
+\fancyfoot[C]{\small\thepage}
+\fancypagestyle{firstpage}{\fancyhf{}\renewcommand{\headrulewidth}{0pt}}
 
-% Adjust margins
-\addtolength{\oddsidemargin}{-0.5in}
-\addtolength{\evensidemargin}{-0.5in}
-\addtolength{\textwidth}{1in}
-\addtolength{\topmargin}{-.5in}
-\addtolength{\textheight}{1.0in}
-\setlength{\footskip}{4.08003pt}
-
-\urlstyle{same}
-
-\raggedbottom
-\raggedright
-\setlength{\tabcolsep}{0in}
-
-% Sections formatting
-\titleformat{\section}{
-  \vspace{-4pt}\scshape\raggedright\large
-}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
-
-\pdfgentounicode=1
+\titleformat{\section}
+  {\large\scshape}{}{0em}{}[\vspace{2pt}\titlerule]
+\titlespacing*{\section}{0pt}{16pt}{8pt}
 
 %-------------------------
 % Custom commands
-\newcommand{\resumeSubheading}[4]{
-  \vspace{-1pt}\item
-    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
-      \textbf{#1} & #2 \\
-      \textit{\small #3} & \textit{\small #4} \\
-    \end{tabular*}\vspace{-5pt}
+
+% Small bracketed link button, e.g. \btnlink{https://example.com}{link}
+\newcommand{\btnlink}[2]{%
+  \href{#1}{\color{linkblue}\small [#2]}%
 }
 
-\newcommand{\resumeItemPlain}[1]{
-  \item\small{{#1 \vspace{-2pt}}}
+% arXiv shorthand, e.g. \arxiv{2606.15057}
+\newcommand{\arxiv}[1]{\btnlink{https://arxiv.org/abs/#1}{arXiv}}
+
+\newcommand{\cvname}[1]{%
+  \begin{center}{\LARGE\scshape #1}\end{center}%
 }
 
-\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
-\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
-\newcommand{\resumeItemListStart}{\begin{itemize}}
-\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+\newcommand{\cvcontact}[3]{%
+  \begin{center}
+    \small \href{mailto:#1}{#1} \quad\textbullet\quad \href{#2}{#3}
+  \end{center}
+  \vspace{4pt}%
+}
 
-\renewcommand{\labelitemii}{$\circ$}
+% {organization}{location}{role/detail}{dates}
+\newcommand{\cventry}[4]{%
+  \vspace{2pt}
+  {\textbf{#1}\hfill #2}\par
+  {\emph{#3}\hfill \emph{#4}}\par
+  \vspace{4pt}%
+}
+
+\newcommand{\cvnote}[1]{%
+  \begin{list}{--}{%
+    \setlength{\leftmargin}{1.2em}\setlength{\itemsep}{0pt}%
+    \setlength{\parsep}{0pt}\setlength{\topsep}{0pt}}
+    \item #1
+  \end{list}
+  \vspace{3pt}%
+}
+
+% {title}{authors}{venue}{url}{link-label}
+% \hangindent (not \parindent) so the first entry after a section
+% heading aligns like the rest.
+\newcommand{\cvpub}[5]{%
+  \par\noindent
+  \hangindent=1.4em\hangafter=1 #1\par
+  \begingroup\leftskip=1.4em\relax
+    {\small #2}\par
+    {\small\emph{#3} \btnlink{#4}{#5}}\par
+  \endgroup
+  \vspace{7pt}%
+}
+
+\newcommand{\cvline}[1]{#1\par\vspace{3pt}}
 
 %-------------------------------------------
-%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%
 \begin{document}
+\thispagestyle{firstpage}
 
-%----------HEADING-----------------
-\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-  \textbf{\Large Xinhang (Owen) Ma} & Email: \href{mailto:m.owen@wustl.edu}{m.owen@wustl.edu} \\
-  \href{https://xhOwenMa.github.io}{xhOwenMa.github.io} & \\
-\end{tabular*}
+\cvname{Xinhang (Owen) Ma}
+\cvcontact{m.owen@wustl.edu}{https://xhOwenMa.github.io}{xhOwenMa.github.io}
 
 
 %-----------EDUCATION-----------------
-\section{Education}
-  \resumeSubHeadingListStart
+\section*{Education}
 
-    \resumeSubheading
-      {Washington University in St. Louis}{St. Louis, MO}
-      {Ph.D. in Computer Science; Advisor: Prof. Yevgeniy Vorobeychik}{Jan. 2025 -- Present}
+\cventry{Washington University in St. Louis}{St. Louis, MO}
+        {Ph.D. in Computer Science; Advisor: Prof. Yevgeniy Vorobeychik}
+        {Jan. 2025 -- Present}
 
-    \resumeSubheading
-      {Washington University in St. Louis}{St. Louis, MO}
-      {M.S. in Computer Science; Advisor: Prof. Yevgeniy Vorobeychik}{Jan. 2024 -- Dec. 2024}
-      \resumeItemListStart
-        \resumeItemPlain{Thesis: \textit{Towards Verified Vision-Based Neural Network Controllers for Autonomous Lane-Following}}
-      \resumeItemListEnd
+\cventry{Washington University in St. Louis}{St. Louis, MO}
+        {M.S. in Computer Science; Advisor: Prof. Yevgeniy Vorobeychik}
+        {Jan. 2024 -- Dec. 2024}
+\cvnote{Thesis: \emph{Towards Verified Vision-Based Neural Network Controllers
+        for Autonomous Lane-Following}
+        \btnlink{https://openscholarship.wustl.edu/eng_etds/1115/}{link}}
 
-    \resumeSubheading
-      {Washington University in St. Louis}{St. Louis, MO}
-      {B.S. in Computer Science and Mathematics}{Aug. 2020 -- Dec. 2023}
-
-  \resumeSubHeadingListEnd
+\cventry{Washington University in St. Louis}{St. Louis, MO}
+        {B.S. in Computer Science and Mathematics}
+        {Aug. 2020 -- Dec. 2023}
 
 
 %-----------PUBLICATIONS-----------------
-\section{Publications}
-  \begin{itemize}[leftmargin=*, itemsep=4pt]
+\section*{Publications}
 
-    \resumeItemPlain{
-      \textbf{Protecting Language Models Against Unauthorized Distillation through Trace Rewriting} \\
-      \textbf{Xinhang Ma}, William Yeoh, Ning Zhang, Yevgeniy Vorobeychik \\
-      \textit{Annual Meeting of the Association for Computational Linguistics (ACL), 2026}
-    }
+\cvpub{AutoDojo: Adaptive Black-Box Attacks Reveal the Limits of IPI Defenses
+       and Task-Specification Effects in LLM Agents}
+      {\textbf{Xinhang Ma}, Taoran Li, Chaowei Xiao, Zhiyuan Yu, Ning Zhang,
+       Yevgeniy Vorobeychik}
+      {arXiv preprint, 2026}
+      {https://arxiv.org/abs/2606.15057}{arXiv}
 
-    \resumeItemPlain{
-      \textbf{Conformal Reachability for Safe Control in Unknown Environments} \\
-      \textbf{Xinhang Ma}, Junlin Wu, Yiannis Kantaros, Yevgeniy Vorobeychik \\
-      \textit{International Conference on Autonomous Agents and Multi-Agent Systems (AAMAS), 2026}
-    }
+\cvpub{Protecting Language Models Against Unauthorized Distillation through
+       Trace Rewriting}
+      {\textbf{Xinhang Ma}, William Yeoh, Ning Zhang, Yevgeniy Vorobeychik}
+      {Annual Meeting of the Association for Computational Linguistics (ACL), 2026}
+      {https://arxiv.org/abs/2602.15143}{arXiv}
 
-    \resumeItemPlain{
-      \textbf{Learning Vision-Based Neural Network Controllers with Semi-Probabilistic Safety Guarantees} \\
-      \textbf{Xinhang Ma}, Junlin Wu, Hussein Sibai, Yiannis Kantaros, Yevgeniy Vorobeychik \\
-      \textit{AAAI Conference on Artificial Intelligence (AAAI), 2026}
-    }
+\cvpub{Conformal Reachability for Safe Control in Unknown Environments}
+      {\textbf{Xinhang Ma}, Junlin Wu, Yiannis Kantaros, Yevgeniy Vorobeychik}
+      {International Conference on Autonomous Agents and Multi-Agent Systems (AAMAS), 2026}
+      {https://arxiv.org/abs/2602.03799}{arXiv}
 
-  \end{itemize}
+\cvpub{Learning Vision-Based Neural Network Controllers with
+       Semi-Probabilistic Safety Guarantees}
+      {\textbf{Xinhang Ma}, Junlin Wu, Hussein Sibai, Yiannis Kantaros,
+       Yevgeniy Vorobeychik}
+      {AAAI Conference on Artificial Intelligence (AAAI), 2026}
+      {https://arxiv.org/abs/2503.00191}{arXiv}
 
 
 %-----------RESEARCH EXPERIENCE-----------------
-\section{Research Experience}
-  \resumeSubHeadingListStart
+\section*{Research Experience}
 
-    \resumeSubheading
-      {Washington University in St. Louis}{St. Louis, MO}
-      {Undergraduate Independent Study, Advisor: Prof. Yevgeniy Vorobeychik}{Aug. 2023 -- May 2024}
-      \resumeItemListStart
-        \resumeItemPlain{Worked with an existing 1/10th-scale F1Tenth autonomous vehicle platform, maintaining the hardware and extending the software stack for autonomous lane following tasks in a miniature city environment.}
-        \resumeItemPlain{Implemented and tuned perception and control modules using onboard camera and LiDAR data, iterating on the system through real-world testing on the physical track.}
-      \resumeItemListEnd
-
-  \resumeSubHeadingListEnd
+\cventry{Washington University in St. Louis}{St. Louis, MO}
+        {Undergraduate Independent Study, Advisor: Prof. Yevgeniy Vorobeychik}
+        {Aug. 2023 -- May 2024}
+\cvnote{Worked with an 1/10th-scale F1Tenth autonomous vehicle platform,
+        maintaining the hardware and extending the software stack for
+        autonomous lane following tasks in a miniature city environment.}
+\cvnote{Implemented and tuned perception and control modules, iterating on
+        the system through real-world testing on the physical track.}
 
 
 %-----------TEACHING-----------------
-\section{Teaching}
-  \resumeSubHeadingListStart
+\section*{Teaching}
 
-    \resumeSubheading
-      {Adversarial AI}{Washington University in St. Louis}
-      {Mentored Teaching Experience (MTE)}{2026}
+\cventry{Adversarial AI}{Washington University in St. Louis}
+        {Mentored Teaching Experience (MTE)}{2026}
 
-    \resumeSubheading
-      {Data-Driven Privacy and Security}{Washington University in St. Louis}
-      {Teaching Assistant}{2025}
+\cventry{Data-Driven Privacy and Security}{Washington University in St. Louis}
+        {Teaching Assistant}{2025}
 
-    \resumeSubheading
-      {Analysis of Algorithms}{Washington University in St. Louis}
-      {Teaching Assistant}{2024}
+\cventry{Analysis of Algorithms}{Washington University in St. Louis}
+        {Teaching Assistant}{2024}
 
-    \resumeSubheading
-      {Data Structures and Algorithms}{Washington University in St. Louis}
-      {Teaching Assistant}{2022, 2023}
-
-  \resumeSubHeadingListEnd
+\cventry{Data Structures and Algorithms}{Washington University in St. Louis}
+        {Teaching Assistant}{2022, 2023}
 
 
 %-----------SERVICES-----------------
-\section{Services}
-  \resumeSubHeadingListStart
-    \resumeItemPlain{Conference Reviewer: NeurIPS 2026, L4DC 2026}
-  \resumeSubHeadingListEnd
+\section*{Services}
+
+\cvline{Conference Reviewer: AAAI 2027, NeurIPS 2026, L4DC 2026}
 
 
 %--------SKILLS------------
-% \section{Skills}
-%   \resumeSubHeadingListStart
-%     \resumeItemPlain{
-%       \textbf{Languages}{: Python, C++, ...} \hfill
-%       \textbf{Frameworks}{: PyTorch, ...}
-%     }
-%   \resumeSubHeadingListEnd
+% \section*{Skills}
+% \cvline{\textbf{Languages}: Python, C++, \ldots \hfill
+%         \textbf{Frameworks}: PyTorch, \ldots}
 
 
 %-------------------------------------------

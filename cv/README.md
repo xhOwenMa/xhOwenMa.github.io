@@ -1,26 +1,23 @@
-A single-page, one-column resume for software developers. It uses the base latex templates and fonts to provide ease of use and installation when trying to update the resume. The different sections are clearly documented and custom commands are used to provide consistent formatting. The three main sections in the resume are education, experience, and projects.
+## CV source
 
-### Motivation
+LaTeX source for the CV linked from the website. `owen_ma_cv.tex` is the single
+source of truth — the PDF served at `assets/files/curriculum_vitae.pdf`
+(referenced by `cv_link` in `_config.yml`) is generated from it.
 
-I created this template as managing a resume on Google Docs was hard and changing any formatting was too difficult since it had to be applied in multiple places.
-
-Most currently available templates either focus on two columns, or are multiple pages long that didn't work well for career fairs or online applications.
-
-### Quick start
-
-Get started quickly using [Overleaf](https://www.overleaf.com/latex/templates/software-engineer-resume/gqxmqsvsbdjf) template.
-
-### Build using Docker
+### Build
 
 ```sh
-docker build -t latex .
-docker run --rm -i -v "$PWD":/data latex pdflatex sourabh_bajaj_resume.tex
+./build.sh
 ```
 
-### Preview
+This compiles `owen_ma_cv.tex` and copies the result over
+`assets/files/curriculum_vitae.pdf`. It uses a local `pdflatex` if one is
+installed and otherwise falls back to the Docker image defined in `Dockerfile`.
 
-![Resume Screenshot](/resume_preview.png)
+Commit the regenerated `assets/files/curriculum_vitae.pdf` along with your
+`.tex` changes — the build is not automated in CI.
 
 ### License
 
-Format is MIT but all the data is owned by Sourabh Bajaj.
+Based on the [sb2nov/resume](https://github.com/sb2nov/resume) template.
+Format is MIT; the CV content is owned by Xinhang (Owen) Ma.
