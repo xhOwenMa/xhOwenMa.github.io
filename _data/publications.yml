@@ -11,7 +11,7 @@ main:
 
   - title: "Protecting Language Models Against Unauthorized Distillation through Trace Rewriting"
     authors: <strong>Xinhang Ma</strong>, William Yeoh, Ning Zhang, Yevgeniy Vorobeychik
-    conference: ACL 2026
+    conference: ACL 2026, Main Conference
     pdf: https://arxiv.org/pdf/2602.15143
     arxiv: https://arxiv.org/abs/2602.15143
 
