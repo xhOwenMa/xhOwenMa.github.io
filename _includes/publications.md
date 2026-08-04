@@ -1,12 +1,9 @@
 <h2 id="publications" style="margin: 2px 0px -15px;">Publications</h2>
 
 <div class="publications">
-
-{% for section in site.data.publications.sections %}
-<h4 style="margin: 18px 0px -12px;">{{ section.heading }}</h4>
-
 <ol class="bibliography">
-{% for link in section.items %}
+
+{% for link in site.data.publications.main %}
 <li style="margin-bottom: 10px;">
   <div class="title">{% if link.pdf %}<a href="{{ link.pdf }}" target="_blank">{{ link.title }}</a>{% else %}{{ link.title }}{% endif %}</div>
   <div class="author">{{ link.authors }}</div>
@@ -21,7 +18,6 @@
   </div>
 </li>
 {% endfor %}
-</ol>
-{% endfor %}
 
+</ol>
 </div>
