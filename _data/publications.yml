@@ -1,25 +1,35 @@
-main:
+# Grouped into sections rendered in the order listed here, matching the CV.
+# To add a paper, drop it under the appropriate section's `items`.
+# Optional per-entry fields: pdf, arxiv, code, page, bibtex, notes.
 
-  - title: "AutoDojo: Adaptive Black-Box Attacks Reveal the Limits of IPI Defenses and Task-Specification Effects in LLM Agents"
-    authors: <strong>Xinhang Ma</strong>, Taoran Li, Chaowei Xiao, Zhiyuan Yu, Ning Zhang, Yevgeniy Vorobeychik
-    conference: arXiv preprint, 2026
-    pdf: https://arxiv.org/pdf/2606.15057
-    arxiv: https://arxiv.org/abs/2606.15057
+sections:
 
-  - title: "Protecting Language Models Against Unauthorized Distillation through Trace Rewriting"
-    authors: <strong>Xinhang Ma</strong>, William Yeoh, Ning Zhang, Yevgeniy Vorobeychik
-    conference: ACL 2026
-    pdf: https://arxiv.org/pdf/2602.15143
-    arxiv: https://arxiv.org/abs/2602.15143
+  - heading: Conference Publications
+    items:
 
-  - title: "Conformal Reachability for Safe Control in Unknown Environments"
-    authors: <strong>Xinhang Ma</strong>, Junlin Wu, Yiannis Kantaros, Yevgeniy Vorobeychik
-    conference: AAMAS 2026
-    pdf: https://arxiv.org/pdf/2602.03799
-    arxiv: https://arxiv.org/abs/2602.03799
+      - title: "Protecting Language Models Against Unauthorized Distillation through Trace Rewriting"
+        authors: <strong>Xinhang Ma</strong>, William Yeoh, Ning Zhang, Yevgeniy Vorobeychik
+        conference: ACL 2026
+        pdf: https://arxiv.org/pdf/2602.15143
+        arxiv: https://arxiv.org/abs/2602.15143
 
-  - title: "Learning Vision-Based Neural Network Controllers with Semi-Probabilistic Safety Guarantees"
-    authors: <strong>Xinhang Ma</strong>, Junlin Wu, Hussein Sibai, Yiannis Kantaros, Yevgeniy Vorobeychik
-    conference: AAAI 2026
-    pdf: https://arxiv.org/pdf/2503.00191
-    arxiv: https://arxiv.org/abs/2503.00191
+      - title: "Conformal Reachability for Safe Control in Unknown Environments"
+        authors: <strong>Xinhang Ma</strong>, Junlin Wu, Yiannis Kantaros, Yevgeniy Vorobeychik
+        conference: AAMAS 2026
+        pdf: https://arxiv.org/pdf/2602.03799
+        arxiv: https://arxiv.org/abs/2602.03799
+
+      - title: "Learning Vision-Based Neural Network Controllers with Semi-Probabilistic Safety Guarantees"
+        authors: <strong>Xinhang Ma</strong>, Junlin Wu, Hussein Sibai, Yiannis Kantaros, Yevgeniy Vorobeychik
+        conference: AAAI 2026
+        pdf: https://arxiv.org/pdf/2503.00191
+        arxiv: https://arxiv.org/abs/2503.00191
+
+  - heading: Preprints
+    items:
+
+      - title: "AutoDojo: Adaptive Black-Box Attacks Reveal the Limits of IPI Defenses and Task-Specification Effects in LLM Agents"
+        authors: <strong>Xinhang Ma</strong>, Taoran Li, Chaowei Xiao, Zhiyuan Yu, Ning Zhang, Yevgeniy Vorobeychik
+        conference: arXiv preprint, 2026
+        pdf: https://arxiv.org/pdf/2606.15057
+        arxiv: https://arxiv.org/abs/2606.15057

@@ -60,11 +60,24 @@
   \begin{center}{\LARGE\scshape #1}\end{center}%
 }
 
-\newcommand{\cvcontact}[3]{%
+% {email}{site-url}{site-label}{scholar-url}
+\newcommand{\cvcontact}[4]{%
   \begin{center}
-    \small \href{mailto:#1}{#1} \quad\textbullet\quad \href{#2}{#3}
+    \small \href{mailto:#1}{#1}
+    \quad\textbullet\quad \href{#2}{#3}
+    \quad\textbullet\quad \href{#4}{Google Scholar}
   \end{center}
   \vspace{4pt}%
+}
+
+% A talk / presentation: {title}{venue}{date}
+\newcommand{\cvtalk}[3]{%
+  \par\noindent
+  \hangindent=1.4em\hangafter=1 #1\par
+  \begingroup\leftskip=1.4em\relax
+    {\small\emph{#2}\hfill #3}\par
+  \endgroup
+  \vspace{5pt}%
 }
 
 % {organization}{location}{role/detail}{dates}
@@ -106,6 +119,7 @@
 
 \cvname{Xinhang (Owen) Ma}
 \cvcontact{m.owen@wustl.edu}{https://xhOwenMa.github.io}{xhOwenMa.github.io}
+          {https://scholar.google.com/citations?user=lggZY84AAAAJ}
 
 
 %-----------EDUCATION-----------------
@@ -128,14 +142,7 @@
 
 
 %-----------PUBLICATIONS-----------------
-\section*{Publications}
-
-\cvpub{AutoDojo: Adaptive Black-Box Attacks Reveal the Limits of IPI Defenses
-       and Task-Specification Effects in LLM Agents}
-      {\textbf{Xinhang Ma}, Taoran Li, Chaowei Xiao, Zhiyuan Yu, Ning Zhang,
-       Yevgeniy Vorobeychik}
-      {arXiv preprint, 2026}
-      {https://arxiv.org/abs/2606.15057}{arXiv}
+\section*{Conference Publications}
 
 \cvpub{Protecting Language Models Against Unauthorized Distillation through
        Trace Rewriting}
@@ -156,24 +163,65 @@
       {https://arxiv.org/abs/2503.00191}{arXiv}
 
 
+%-----------PREPRINTS-----------------
+\section*{Preprints}
+
+\cvpub{AutoDojo: Adaptive Black-Box Attacks Reveal the Limits of IPI Defenses
+       and Task-Specification Effects in LLM Agents}
+      {\textbf{Xinhang Ma}, Taoran Li, Chaowei Xiao, Zhiyuan Yu, Ning Zhang,
+       Yevgeniy Vorobeychik}
+      {arXiv preprint, 2026}
+      {https://arxiv.org/abs/2606.15057}{arXiv}
+
+
+%-----------TALKS-----------------
+\section*{Talks and Presentations}
+
+% Poster presentations (AAMAS, AAAI) are intentionally omitted -- they are
+% already evident from the Conference Publications section.
+\cvtalk{Protecting Language Models Against Unauthorized Distillation through
+        Trace Rewriting}
+       {Oral presentation, Annual Meeting of the Association for
+        Computational Linguistics (ACL)}{2026}
+
+\cvtalk{LLM Security: Jailbreak and Prompt Injection Attacks and Defenses}
+       {Guest lecture, Adversarial AI, Washington University in St. Louis}
+       {2026}
+
+
 %-----------RESEARCH EXPERIENCE-----------------
 \section*{Research Experience}
+
+% DRAFT: bullets below summarize the published work; edit freely to match
+% how you would describe the agenda yourself.
+\cventry{Graduate Research Assistant, Vorobeychik Lab}{St. Louis, MO}
+        {Washington University in St. Louis}
+        {Jan. 2024 -- Present}
+\cvnote{Study attacks and defenses for indirect prompt injection in LLM
+        agents, including an adaptive black-box attack framework used to
+        measure how far existing IPI defenses actually generalize, and how
+        much of their apparent robustness depends on task specification.}
+\cvnote{Develop methods that protect deployed language models against
+        unauthorized distillation by rewriting reasoning traces, preserving
+        answer accuracy while degrading the value of the traces to a
+        distilling adversary.}
+\cvnote{Develop safety guarantees for learned controllers, combining
+        conformal prediction with reachability analysis to certify
+        vision-based neural network policies under unknown dynamics.}
 
 \cventry{Washington University in St. Louis}{St. Louis, MO}
         {Undergraduate Independent Study, Advisor: Prof. Yevgeniy Vorobeychik}
         {Aug. 2023 -- May 2024}
-\cvnote{Worked with an 1/10th-scale F1Tenth autonomous vehicle platform,
-        maintaining the hardware and extending the software stack for
-        autonomous lane following tasks in a miniature city environment.}
-\cvnote{Implemented and tuned perception and control modules, iterating on
-        the system through real-world testing on the physical track.}
+\cvnote{Maintained and extended the software stack of a 1/10th-scale F1Tenth
+        autonomous vehicle, tuning perception and control for lane following
+        in a miniature city environment.}
 
 
 %-----------TEACHING-----------------
 \section*{Teaching}
 
 \cventry{Adversarial AI}{Washington University in St. Louis}
-        {Mentored Teaching Experience (MTE)}{2026}
+        {Mentored Teaching Experience (guest lectures, course design)}{2026}
 
 \cventry{Data-Driven Privacy and Security}{Washington University in St. Louis}
         {Teaching Assistant}{2025}
@@ -185,8 +233,18 @@
         {Teaching Assistant}{2022, 2023}
 
 
-%-----------SERVICES-----------------
-\section*{Services}
+%-----------HONORS-----------------
+% TODO: fill in and uncomment. Undergraduate honors (Latin honors, dean's
+% list, departmental prizes), travel grants, fellowships, and any award
+% that came with the M.S. or Ph.D. admission all belong here.
+%
+% \section*{Honors and Awards}
+%
+% \cventry{<award name>}{<granting body>}{<one-line detail, optional>}{<year>}
+
+
+%-----------SERVICE-----------------
+\section*{Service}
 
 \cvline{Conference Reviewer: AAAI 2027, NeurIPS 2026, L4DC 2026}
 
