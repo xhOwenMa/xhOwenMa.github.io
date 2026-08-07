@@ -26,3 +26,9 @@ main:
     conference: AAAI 2026
     pdf: https://arxiv.org/pdf/2503.00191
     arxiv: https://arxiv.org/abs/2503.00191
+
+  - title: "From Speech to Data: Unraveling Google's Use of Voice Data for User Profiling"
+    authors: <strong>Xinhang Ma</strong>, Sirui Chen
+    conference: arXiv preprint, 2024 (not peer reviewed)
+    pdf: https://arxiv.org/pdf/2403.05586
+    arxiv: https://arxiv.org/abs/2403.05586
