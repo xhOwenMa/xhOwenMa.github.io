@@ -3,6 +3,13 @@
 
 main:
 
+  - title: "Robust Context-Aware Detection of Malicious Instructions in Text"
+    authors: Buzhao Liu*, <strong>Xinhang Ma</strong>*, Yevgeniy Vorobeychik (* equal contribution)
+    conference: arXiv preprint, 2026
+    pdf: https://arxiv.org/pdf/2608.05430
+    arxiv: https://arxiv.org/abs/2608.05430
+    code: https://github.com/tavia-liu/CAD
+
   - title: "AutoDojo: Adaptive Black-Box Attacks Reveal the Limits of IPI Defenses and Task-Specification Effects in LLM Agents"
     authors: <strong>Xinhang Ma</strong>, Taoran Li, Chaowei Xiao, Zhiyuan Yu, Ning Zhang, Yevgeniy Vorobeychik
     conference: arXiv preprint, 2026
