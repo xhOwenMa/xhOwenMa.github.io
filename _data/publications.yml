@@ -1,41 +1,46 @@
 # Flat, reverse-chronological list. Optional per-entry fields:
-# pdf, arxiv, code, page, bibtex, notes.
+# arxiv, code, page, bibtex, notes.
 
 main:
+
+  - title: "ROPE: Routed Origin Policy Enforcement against Indirect Prompt Injection"
+    authors: <strong>Xinhang Ma</strong>, Chaowei Xiao, William Yeoh, Ning Zhang, Yevgeniy Vorobeychik
+    conference: arXiv preprint, 2026
+    arxiv: https://arxiv.org/abs/2608.27496
+    code: https://github.com/xhOwenMa/ROPE
 
   - title: "Robust Context-Aware Detection of Malicious Instructions in Text"
     authors: Buzhao Liu*, <strong>Xinhang Ma</strong>*, Yevgeniy Vorobeychik (* equal contribution)
     conference: arXiv preprint, 2026
-    pdf: https://arxiv.org/pdf/2608.05430
     arxiv: https://arxiv.org/abs/2608.05430
     code: https://github.com/tavia-liu/CAD
 
   - title: "AutoDojo: Adaptive Black-Box Attacks Reveal the Limits of IPI Defenses and Task-Specification Effects in LLM Agents"
     authors: <strong>Xinhang Ma</strong>, Taoran Li, Chaowei Xiao, Zhiyuan Yu, Ning Zhang, Yevgeniy Vorobeychik
     conference: arXiv preprint, 2026
-    pdf: https://arxiv.org/pdf/2606.15057
     arxiv: https://arxiv.org/abs/2606.15057
+    code: https://github.com/xhOwenMa/AutoDojo
 
   - title: "Protecting Language Models Against Unauthorized Distillation through Trace Rewriting"
     authors: <strong>Xinhang Ma</strong>, William Yeoh, Ning Zhang, Yevgeniy Vorobeychik
     conference: ACL 2026, Main Conference
-    pdf: https://arxiv.org/pdf/2602.15143
     arxiv: https://arxiv.org/abs/2602.15143
+    code: https://github.com/xhOwenMa/trace-rewriting
 
   - title: "Conformal Reachability for Safe Control in Unknown Environments"
     authors: <strong>Xinhang Ma</strong>, Junlin Wu, Yiannis Kantaros, Yevgeniy Vorobeychik
     conference: AAMAS 2026
-    pdf: https://arxiv.org/pdf/2602.03799
     arxiv: https://arxiv.org/abs/2602.03799
+    code: https://github.com/xhOwenMa/ReCORS
 
   - title: "Learning Vision-Based Neural Network Controllers with Semi-Probabilistic Safety Guarantees"
     authors: <strong>Xinhang Ma</strong>, Junlin Wu, Hussein Sibai, Yiannis Kantaros, Yevgeniy Vorobeychik
     conference: AAAI 2026
-    pdf: https://arxiv.org/pdf/2503.00191
     arxiv: https://arxiv.org/abs/2503.00191
+    code: https://github.com/xhOwenMa/SPVT
 
   - title: "From Speech to Data: Unraveling Google's Use of Voice Data for User Profiling"
     authors: <strong>Xinhang Ma</strong>, Sirui Chen
     conference: arXiv preprint, 2024 (not peer reviewed)
-    pdf: https://arxiv.org/pdf/2403.05586
     arxiv: https://arxiv.org/abs/2403.05586
+    code: https://github.com/xhOwenMa/voice_data_google

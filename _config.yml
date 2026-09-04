@@ -1,56 +1,33 @@
-# Basic Information
+# Site
 title: Xinhang (Owen) Ma
+description: Ph.D. student in Computer Science & Engineering at Washington University in St. Louis, researching LLM security, prompt injection, and watermarking.
+keywords: Xinhang Ma, Owen Ma, LLM security, prompt injection, Washington University in St. Louis
+url: https://xhOwenMa.github.io
+lang: en
+
+# Profile
 position: Ph.D. Student
 affiliation: Computer Science & Engineering, Washington University in St. Louis
+affiliation_link: https://cse.wustl.edu/
 email: m.owen (at) wustl.edu
+avatar: /assets/img/avatar.png
 
-# Search Engine Optimization (SEO)
-# The following information is used to improve the website traffic from search engines, e.g., Google.
-keywords: Xinhang Ma, Owen Ma, LLM security, prompt injection, Washington University in St. Louis
-description: Ph.D. student in CSE at Washington University in St. Louis, researching LLM security, prompt injection, and watermarking.
-canonical: https://xhOwenMa.github.io/
+# Links shown under the name
+links:
+  - label: Google Scholar
+    url: https://scholar.google.com/citations?user=lggZY84AAAAJ
+  - label: CV
+    url: /assets/files/curriculum_vitae.pdf
+  - label: GitHub
+    url: https://github.com/xhOwenMa
+  - label: X
+    url: https://x.com/OwenMxhang
 
-# Links
-# If you don't need one of them, you may delete the corresponding line.
-google_scholar: https://scholar.google.com/citations?user=lggZY84AAAAJ
-cv_link: assets/files/curriculum_vitae.pdf
-github_link: https://github.com/xhOwenMa
-twitter: https://x.com/OwenMxhang
-
-# Images (e.g., your profile picture and your website's favicon) 
-# "favicon" and "favicon_dark" are used for the light and dark modes, respectively. 
-avatar: ./assets/img/avatar.png
-favicon: ./assets/img/favicon.png
-favicon_dark: ./assets/img/favicon-dark.png
-
-# Footnote
-# You may use the option to disable the footnote, "Powered by Jekyll and Minimal Light theme."
-enable_footnote: true
-
-# Auto Dark Mode
-# You may use the option to disable the automatic dark theme
-auto_dark_mode: true
-
-# Font
-# You can use this option to choose between Serif or Sans Serif fonts.
-font: "Serif" # or "Sans Serif"
-
-
-plugins:
-  - jekyll-remote-theme
-
-# Use this project as a remote theme for GitHub Pages
-# See the guide here: https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/adding-a-theme-to-your-github-pages-site-using-jekyll
-remote_theme: yaoyao-liu/minimal-light
-
-# The following files will be removed from the generated website.
+# Build
+plugins: []
 exclude:
   - Gemfile
   - Gemfile.lock
+  - cv/
+  - vendor/
   - README.md
-  - README_zh_Hans.md
-  - README_zh_Hant.md
-  - README_de.md
-  - LICENSE
-  - minimal-light.gemspec
-  - html_source_file/
